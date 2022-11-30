@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lottery.css">
+</head>
+<body>
+    <section class="all" >
+     <div class="norm" id="form">
+    <form action="" class="way" id="form">
+        <p class="london">
+            <h1>Registration Form</h1>
+            <div class="on">
+                      
+                Name:<input type="text" id="name">
+                      <p id="call"></p>
+
+                <br> <br> <br>  PhoneNum:<input type="text" id="phone">
+                                 <p id="on"></p>
+
+                 <br> <br> <br> Email: <input type="text" id="hear">
+                                <h1 id="move"></h1>
+            </div>
+           
+
+        </p>
+         
+        
+        
+        <input type="button" value="Submit" class="cent">
+    </form>
+     </div>
+
+    
+    <div class="down">
+        
+        <div class="town">
+            <p>Name: <p id="pp"></p></p>
+       <br> <p>PhoneNum: <p id="pv"></p></p>
+        <br> <p>Email:</p><p id="pz"></p></p>
+        </div>
+        
+    </div>
+
+    </section>
+
+
+    <script>
+       let  form=document.getElementById("form")
+       let validateEmail = document.getElementById("hear")
+       let validatename = document.getElementById("name")
+       let validatePhoneNum = document.getElementById("phone")
+       form.addEventListener("click", love)
+        function love(event){
+            event.preventDefault();
+            let name = form['name'].value
+            let email = form['hear'].value
+            let phone = form['phone'].value
+            if(name.trim()==""){
+                error = "your name is required"
+            }
+            else if(name.length < 10){
+                validatename.value = name
+                error = ""
+            }
+            document.getElementById("call").innerHTML=error
+            
+
+    
+            if (email== ""){
+            email="input your mail"
+            }
+             else if(email.indexOf('@') != -1 && email.indexOf('.') != -1 && (email.indexOf('gmail') != -1) ){
+             document.getElementById("hear").innerHTML=('Valid Email')
+             err="Valid"
+             validateEmail=''
+
+            }else {
+            document.getElementById("move").innerHTML=('Your Email is invalid')
+            err="invaild"
+            validateEmail=''
+            part.innerHTML =email
+             }
+             console.log(err)
+
+             if(phone.value.includes('081') || phone.value.includes('070') || phone.value.includes('091') || phone.value.includes('080') || phone.value.includes("01") && phone.value.length==7 || phone.value.length ==11)  {
+            document.getElementById("on").innerHTML='Valid phone number'
+       
+            }else{
+            document.getElementById("on").innerHTML=' Not Valid phone number'
+            part.innerHTML = number.value
+            }
+
+        }
+      
+            
+
+       
+
+    </script>
+</body>
+</html>

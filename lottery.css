@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.norm{
+    background-color: aliceblue;
+    width: 40%;
+    height: 400px;
+    border: 3px solid yellow;
+    padding-top: 40px;
+    margin-left: 470px;
+    border-radius: 10%;
+}
+
+.all{
+    background-color:rgb(255, 255, 255) ;
+    height: 800px;
+
+}
+
+.london{
+    padding-left: 60px;
+}
+
+.london2{
+    padding-left: 30px;
+}
+
+.cent{
+    margin-left: 200px;
+    margin-top: 60px;
+}
+
+
+
+.down{
+    background-color: darkgray;
+    width: 40%;
+    margin-top: 50px;
+    border: 6px solid black;
+    margin-left: 470px;
+    border-radius: 4%;
+}
